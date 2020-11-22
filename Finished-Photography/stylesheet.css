@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body { 
+    margin: 0;
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, 
+h2, 
+h3, 
+p {
+    margin:0;
+}
+section h1 {
+    margin: 0;
+}
+.container-1 h2::before{
+    content: '';
+    width: 60px;
+    height: 60px;
+    
+    background: url("https://www.flaticon.com/svg/static/icons/svg/3507/3507545.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:60px;
+    
+     
+    height: 5em;
+    position: absolute;
+}
+
+.container-2 h2::before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    
+    background: url("https://www.flaticon.com/svg/static/icons/svg/3507/3507545.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:60px;
+    
+       
+    height: 5em;
+    position: absolute;
+    
+}
+
+
+@media screen and (max-width: 445px) {
+    .container-1 h2::before {
+        padding: 1em;
+        margin-top: 1em;
+    }
+
+}
+@media screen and (min-width: 388px) {
+    .container-1 h2::before {
+        margin-top: 0em;
+        margin-left: 8em;
+    }
+}
+@media screen and (min-width: 300px) {
+    .container-2 h2::before {
+        height: 8em;
+        margin-left: 1em;
+        
+    }
+}
+@media screen and (min-width: 400px) {
+    .container-2 h2::before {
+        
+    
+   }
+}
+.container-1 {
+    width: 85%;
+    max-width: 65em;
+    margin: 0 auto;
+}
+
+.container-2 {
+    width: 85%;
+    max-width: 65em;
+    margin: 0 auto;
+
+}
+
+nav {
+    
+    width:100%;
+    height: 6em;
+}
+
+.nav-list {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera:hover, 
+.camera:focus {
+    opacity: 0.5;
+
+}
+
+@keyframes slide {
+    0% { 
+       left: 1000px;
+    }
+
+    100% {
+        left: 0px;
+        
+    }
+}
+
+
+.logo {
+    
+    margin: 3em;
+    width:100%;
+    height: 5em;  
+    position: relative;
+   
+    }
+    
+
+.camera {
+    position: relative;
+    width: 40px;
+    transition: .5s ease-in-out;
+    animation: slide 1s ease-in-out;
+    }
+#name-logo {
+  font-family: 'Satisfy', cursive;
+}
+
+.name {
+    
+    text-transform: uppercase;
+    line-height: .5em;
+    
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 1em;
+    padding: .7em 1.30em;
+    background-color: blue;
+    color: whitesmoke;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: .3em;
+    transition: transform 250ms ease-in-out,
+    opacity 250ms linear;
+
+    }
+
+.featured-item {
+   
+    transition: transform 250ms ease-in-out,
+    opacity 250ms linear;
+    
+    }
+
+.featured-item:hover, 
+.featured-item:focus {
+    transform:scale(1.1);
+    opacity: 0.9;
+    
+}
+
+.btn:hover,
+.btn:focus {
+    transform:scale(1.1);
+    opacity: 0.7;
+}
+
+.primary-text {
+    margin-bottom: .7em;
+    font-size: 3rem;
+    line-height: 1;
+    text-transform:uppercase;
+}
+
+@media screen and (max-width:500px) {
+    .primary-text {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .primary-text {
+        font-size: 2rem;
+    }
+}
+
+
+.section-title {
+    font-family: 'Satisfy', cursive;
+    text-align:center;
+    font-size: 2rem;
+    margin-bottom: 6rem;
+    padding-top: 2em;
+}
+
+
+
+
+.hero {
+    text-align: center;
+    padding: 15em 0;
+    background-image: url(DSC_0032.JPG);
+    
+}
+
+main {
+    background-color: lightblue;
+}
+
+
+
+
+.spilt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.spilt >* {
+    flex-basis: 30%;
+    min-width: 15em;
+
+}
+
+.emily {
+    width: 50%;
+    border-radius: 50%;
+    object-fit: contain;
+    margin:0 auto 5em;
+}
+
+@media screen and (max-width: 750px) {
+    .emily{
+    width:70%;
+  }
+}
+
+.about-text {
+    font-size: 1.2rem;
+} 
+
+.feature-para {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+.push { 
+    margin-top: 3rem;
+    text-align: center;
+}
+.footer {
+    padding-top: 3em;
+    width: 100%;
+    height: auto;
+    background-color: lightblue;
+}
+.footer p {
+    font-size:.8em;
+    text-align: center;
+
+}
+    
